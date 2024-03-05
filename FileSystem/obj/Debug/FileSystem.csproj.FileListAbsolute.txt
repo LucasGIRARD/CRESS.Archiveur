@@ -1,0 +1,5 @@
+E:\dev\VS\CRESS.Archiveur\FileSystem\bin\Debug\FileSystem.dll
+E:\dev\VS\CRESS.Archiveur\FileSystem\bin\Debug\FileSystem.pdb
+E:\dev\VS\CRESS.Archiveur\FileSystem\obj\Debug\FileSystem.csprojResolveAssemblyReference.cache
+E:\dev\VS\CRESS.Archiveur\FileSystem\obj\Debug\FileSystem.dll
+E:\dev\VS\CRESS.Archiveur\FileSystem\obj\Debug\FileSystem.pdb

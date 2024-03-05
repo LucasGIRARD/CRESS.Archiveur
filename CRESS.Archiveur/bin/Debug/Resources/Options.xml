@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="Options">
+  <Option value="Display">
+    <Type value="DeployAll"/>
+    <PanelLeft value="True"/>
+    <PanelRight value="True"/>
+    <PanelUsers value="True"/>
+    <PanelFiles value="True"/>
+    <PanelSystem value="True"/>
+    <PanelDate value="True"/>
+  </Option>
+
+  <Option value="Connect">
+    <Activate value="False"/>
+    <Login value=""/>
+    <Pass value=""/>
+  </Option>
+
+  <Option value="Path">
+    <BDD value="TODO"/>
+    <Server value="C:\Users\girar\Desktop\TEST\serveur"/>
+    <Save value="C:\Users\girar\Desktop\TEST\save"/>
+  </Option>
+</Application>

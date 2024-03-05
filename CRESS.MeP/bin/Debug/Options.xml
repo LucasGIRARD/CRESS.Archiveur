@@ -1,0 +1,11 @@
+<Application xmlns="Options">
+  <Option value="Connect">
+    <Activate value="False" />
+    <Login value="" />
+    <Pass value="" />
+  </Option>
+  <Option value="Path">
+    <BDD value="C:\Users\girar\Desktop\TEST\serveur\archiveur.sdf" />
+    <Server value="C:\Users\girar\Desktop\TEST\serveur" />
+  </Option>
+</Application>

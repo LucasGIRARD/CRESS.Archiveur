@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll">
+   <Modules>
+    <Module Name="exptreelib.dll">
+     <Namespaces>
+      <Namespace Name="ExpTreeLib">
+       <Types>
+        <Type Name="CProcDataObject" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalError">Implémentez IDisposable sur 'CProcDataObject'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(System.IntPtr&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="97">'CProcDataObject.New(ByRef IntPtr)' est appelé dans 'Marshal.GetTypedObjectForIUnknown(IntPtr, Type)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.GetTypedObjectForIUnknown(IntPtr, Type)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.Windows.Forms.DataObject&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="75">'CProcDataObject.New(ByRef DataObject)' est appelé dans 'Marshal.GetComInterfaceForObject(Object, Type)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.GetComInterfaceForObject(Object, Type)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef DataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef DataObject)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MakeShellIDArray(System.Collections.ArrayList)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="335">'CProcDataObject.MakeShellIDArray(ArrayList)' est appelé dans 'Marshal.SizeOf(Type)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.SizeOf(Type)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.MakeShellIDArray(ArrayList)'&#xD;&#xA;   -&gt;'CProcDataObject.MakeShellIDArray(ArrayList)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ProcessCOMIDataObject(ExpTreeLib.ShellDll+IDataObject)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="135">'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)' est appelé dans 'Marshal.AllocHGlobal(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocHGlobal(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="135">'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="135">'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)' est appelé dans 'Marshal.ReadIntPtr(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReadIntPtr(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="135">'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CProcDataObject.vb" Line="135">'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)' est appelé dans 'Marshal.WriteIntPtr(IntPtr, Integer, IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.WriteIntPtr(IntPtr, Integer, IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.ProcessCOMIDataObject(ShellDll.IDataObject)'&#xD;&#xA;   -&gt;'CProcDataObject.New(ByRef IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CShItem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.GetDeskTop()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="204">'CShItem.New()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New()'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(ExpTreeLib.ShellDll+CSIDL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="275">'CShItem.New(ShellDll.CSIDL)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="275">'CShItem.New(ShellDll.CSIDL)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="275">'CShItem.New(ShellDll.CSIDL)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(ExpTreeLib.ShellDll+IShellFolder,System.IntPtr,ExpTreeLib.CShItem)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="175">'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="175">'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="175">'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="175">'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.Byte[],System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="361">'CShItem.New(Byte(), Byte())' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="361">'CShItem.New(Byte(), Byte())' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="317">'CShItem.New(String)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(String)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="317">'CShItem.New(String)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(String)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="317">'CShItem.New(String)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.New(String)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#concatPidls(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1725">'CShItem.concatPidls(IntPtr, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1725">'CShItem.concatPidls(IntPtr, IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1725">'CShItem.concatPidls(IntPtr, IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.concatPidls(IntPtr, IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DecomposePIDL(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1655">'CShItem.DecomposePIDL(IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1655">'CShItem.DecomposePIDL(IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1655">'CShItem.DecomposePIDL(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1655">'CShItem.DecomposePIDL(IntPtr)' est appelé dans 'Marshal.ReadByte(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReadByte(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.DecomposePIDL(IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="124">'CShItem.Dispose(Boolean)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.Dispose(Boolean)'&#xD;&#xA;   -&gt;'CShItem.Dispose(Boolean)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="124">'CShItem.Dispose(Boolean)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.Dispose(Boolean)'&#xD;&#xA;   -&gt;'CShItem.Dispose(Boolean)'</Issue>
+            </Message>
+            <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Name="NoAllowedExceptions" Certainty="90" Level="Error" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="144">'CShItem.Dispose(Boolean)' crée une exception de type 'Exception'. Les exceptions ne doivent pas être levés dans ce type de méthode. Si cette instance d'exception peut être levée, modifiez la logique de la méthode afin qu'elle ne lève plus une exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DumpPidl(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1798">'CShItem.DumpPidl(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.DumpPidl(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.DumpPidl(IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindCShItem(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="631">'CShItem.FindCShItem(Byte())' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'&#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="631">'CShItem.FindCShItem(Byte())' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'&#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="631">'CShItem.FindCShItem(Byte())' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'&#xD;&#xA;   -&gt;'CShItem.FindCShItem(Byte())'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetContents(ExpTreeLib.ShellDll+SHCONTF,System.Boolean)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1493">'CShItem.GetContents(ShellDll.SHCONTF, Boolean)' est appelé dans 'Marshal.ReleaseComObject(Object)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ReleaseComObject(Object)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCShItem(ExpTreeLib.ShellDll+CSIDL)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="578">'CShItem.GetCShItem(ShellDll.CSIDL)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetCShItem(ShellDll.CSIDL)'&#xD;&#xA;   -&gt;'CShItem.GetCShItem(ShellDll.CSIDL)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCShItem(System.Byte[],System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="609">'CShItem.GetCShItem(Byte(), Byte())' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'&#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="609">'CShItem.GetCShItem(Byte(), Byte())' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'&#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="609">'CShItem.GetCShItem(Byte(), Byte())' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'&#xD;&#xA;   -&gt;'CShItem.GetCShItem(Byte(), Byte())'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCShItem(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="556">'CShItem.GetCShItem(String)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetCShItem(String)'&#xD;&#xA;   -&gt;'CShItem.GetCShItem(String)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDropTargetOf(System.Windows.Forms.Control)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1464">'CShItem.GetDropTargetOf(Control)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetDropTargetOf(Control)'&#xD;&#xA;   -&gt;'CShItem.GetDropTargetOf(Control)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetParentOf(System.IntPtr,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="460">'CShItem.GetParentOf(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="460">'CShItem.GetParentOf(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="460">'CShItem.GetParentOf(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="460">'CShItem.GetParentOf(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetParentOf(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsReadOnly" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_IsReadOnly()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+               <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1063">'CShItem.IsReadOnly.Get()' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.IsReadOnly.Get()'&#xD;&#xA;   -&gt;'CShItem.IsReadOnly.Get()'</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ItemIDSize(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1585">'CShItem.ItemIDSize(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.ItemIDSize(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.ItemIDSize(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.ItemIDListSize(IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MakeFolderFromBytes(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="435">'CShItem.MakeFolderFromBytes(Byte())' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'&#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="435">'CShItem.MakeFolderFromBytes(Byte())' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'&#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="435">'CShItem.MakeFolderFromBytes(Byte())' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'&#xD;&#xA;   -&gt;'CShItem.MakeFolderFromBytes(Byte())'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PIDLClone(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1676">'CShItem.PIDLClone(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.PIDLClone(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RefreshDirectories()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1349">'CShItem.RefreshDirectories()' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetUpAttributes(ExpTreeLib.ShellDll+IShellFolder,System.IntPtr)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(Byte(), Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.CSIDL)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetFiles()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.GetItems()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.GetContents(ShellDll.SHCONTF, Boolean)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(ShellDll.IShellFolder, IntPtr, CShItem)'&#xD;&#xA;   -&gt;'CShItem.RefreshDirectories()'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="482">'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)' est appelé dans 'Marshal.ThrowExceptionForHR(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.ThrowExceptionForHR(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.SetUpAttributes(ShellDll.IShellFolder, IntPtr)'&#xD;&#xA;   -&gt;'CShItem.New(String)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TrimPidl(System.IntPtr,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1764">'CShItem.TrimPidl(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1764">'CShItem.TrimPidl(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1764">'CShItem.TrimPidl(IntPtr, ByRef IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'&#xD;&#xA;   -&gt;'CShItem.TrimPidl(IntPtr, ByRef IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CShItem+cPidl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.IntPtr)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="1905">'CShItem.cPidl.New(IntPtr)' est appelé dans 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(IntPtr, Byte(), Integer, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.cPidl.New(IntPtr)'&#xD;&#xA;   -&gt;'CShItem.cPidl.New(IntPtr)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BytesToPidl(System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="2012">'CShItem.cPidl.BytesToPidl(Byte())' est appelé dans 'Marshal.AllocCoTaskMem(Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.AllocCoTaskMem(Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.cPidl.BytesToPidl(Byte())'&#xD;&#xA;   -&gt;'CShItem.cPidl.BytesToPidl(Byte())'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="CShItem.vb" Line="2012">'CShItem.cPidl.BytesToPidl(Byte())' est appelé dans 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.Copy(Byte(), Integer, IntPtr, Integer)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'CShItem.cPidl.BytesToPidl(Byte())'&#xD;&#xA;   -&gt;'CShItem.cPidl.BytesToPidl(Byte())'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ExpTree" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExpTreeNodeSelected" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Déclarez le premier paramètre de 'ExpTree.ExpTreeNodeSelectedEventHandler' en tant qu'objet nommé 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Déclarez le second paramètre de 'ExpTree.ExpTreeNodeSelectedEventHandler' en tant que EventArgs, ou une instance d'un type qui étend EventArgs, nommée 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StartUpDirectoryChanged" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Déclarez le premier paramètre de 'ExpTree.StartUpDirectoryChangedEventHandler' en tant qu'objet nommé 'sender'.</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Déclarez le second paramètre de 'ExpTree.StartUpDirectoryChangedEventHandler' en tant que EventArgs, ou une instance d'un type qui étend EventArgs, nommée 'e'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShellDll" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DestroyIcon(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.DestroyIcon(IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.DestroyIcon(IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DragQueryFile(System.IntPtr,System.Int32,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.DragQueryFile(IntPtr, Integer, StringBuilder, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.DragQueryFile(IntPtr, Integer, StringBuilder, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">Pour garantir votre sécurité, marshalez le paramètre 'lpszFile' comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, définissez BestFitMapping=false ; pour une sécurité accrue, définissez aussi ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSpecialFolderPath(System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib" File="ShellDll.vb" Line="1293">'ShellDll.GetSpecialFolderPath(IntPtr, Integer)' est appelé dans 'Marshal.FreeCoTaskMem(IntPtr)' qui contient un LinkDemand. En effectuant cet appel, 'Marshal.FreeCoTaskMem(IntPtr)' s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : &#xD;&#xA;   -&gt;'ShellDll.GetSpecialFolderPath(IntPtr, Integer)'&#xD;&#xA;   -&gt;'ShellDll.GetSpecialFolderPath(IntPtr, Integer)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ILIsEqual(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ILIsEqual(IntPtr, IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ILIsEqual(IntPtr, IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ILIsParent(System.IntPtr,System.IntPtr,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ILIsParent(IntPtr, IntPtr, Boolean)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ILIsParent(IntPtr, IntPtr, Boolean)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ImageList_Draw(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ImageList_Draw(IntPtr, Integer, IntPtr, Integer, Integer, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ImageList_Draw(IntPtr, Integer, IntPtr, Integer, Integer, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ImageList_GetIcon(System.IntPtr,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ImageList_GetIcon(IntPtr, Integer, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ImageList_GetIcon(IntPtr, Integer, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ImageList_GetIconSize(System.IntPtr,System.Int32&amp;,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ImageList_GetIconSize(IntPtr, ByRef Integer, ByRef Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ImageList_GetIconSize(IntPtr, ByRef Integer, ByRef Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ImageList_ReplaceIcon(System.IntPtr,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ImageList_ReplaceIcon(IntPtr, Integer, IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ImageList_ReplaceIcon(IntPtr, Integer, IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegisterClipboardFormat(System.String&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.RegisterClipboardFormat(ByRef String)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.RegisterClipboardFormat(ByRef String)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegisterDragDrop(System.IntPtr,ExpTreeLib.ShellDll+IDropTarget)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.RegisterDragDrop(IntPtr, ShellDll.IDropTarget)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.RegisterDragDrop(IntPtr, ShellDll.IDropTarget)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReleaseStgMedium(ExpTreeLib.ShellDll+STGMEDIUM&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.ReleaseStgMedium(ByRef ShellDll.STGMEDIUM)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.ReleaseStgMedium(ByRef ShellDll.STGMEDIUM)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RevokeDragDrop(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.RevokeDragDrop(IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.RevokeDragDrop(IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SendMessage(System.IntPtr,System.Int32,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SendMessage(IntPtr, Integer, Integer, IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">Tel qu'il est déclaré dans votre code, le paramètre 'wParam' de P/Invoke 'ShellDll.SendMessage(IntPtr, Integer, Integer, IntPtr)' aura une largeur de 4 octets sur les plateformes 64 bits. Cela n'est pas correct, car la déclaration native réelle de cette API indique qu'elle doit avoir une largeur de 8 octets sur les plateformes 64 bits. Consultez la documentation du Kit de développement Platform SDK de MSDN pour obtenir de l'aide sur le choix du type de données à utiliser à la place de 'Integer'.</Issue>
+            </Message>
+            <Message Id="return" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Error">Tel qu'il est déclaré dans votre code, le type de retour de P/Invoke 'ShellDll.SendMessage(IntPtr, Integer, Integer, IntPtr)' aura une largeur de 4 octets sur les plateformes 64 bits. Cela n'est pas correct, car la déclaration native réelle de cette API indique qu'elle doit avoir une largeur de 8 octets sur les plateformes 64 bits. Consultez la documentation du Kit de développement Platform SDK de MSDN pour obtenir de l'aide sur le choix du type de données à utiliser à la place de 'Integer'.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SendMessage(IntPtr, Integer, Integer, IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetDesktopFolder(ExpTreeLib.ShellDll+IShellFolder&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetDesktopFolder(ByRef ShellDll.IShellFolder)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetDesktopFolder(ByRef ShellDll.IShellFolder)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetFileInfo(System.IntPtr,System.Int32,ExpTreeLib.ShellDll+SHFILEINFO&amp;,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetFileInfo(IntPtr, Integer, ByRef ShellDll.SHFILEINFO, Integer, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetFileInfo(IntPtr, Integer, ByRef ShellDll.SHFILEINFO, Integer, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetFileInfo(System.String&amp;,System.Int32,ExpTreeLib.ShellDll+SHFILEINFO&amp;,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetFileInfo(ByRef String, Integer, ByRef ShellDll.SHFILEINFO, Integer, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetFileInfo(ByRef String, Integer, ByRef ShellDll.SHFILEINFO, Integer, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetMalloc(ExpTreeLib.ShellDll+IMalloc&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetMalloc(ByRef ShellDll.IMalloc)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetMalloc(ByRef ShellDll.IMalloc)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetNewLinkInfo(System.IntPtr,System.String&amp;,System.Text.StringBuilder,System.Boolean&amp;,ExpTreeLib.ShellDll+SHGNLI)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetNewLinkInfo(IntPtr, ByRef String, StringBuilder, ByRef Boolean, ShellDll.SHGNLI)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetNewLinkInfo(IntPtr, ByRef String, StringBuilder, ByRef Boolean, ShellDll.SHGNLI)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Pour garantir votre sécurité, marshalez le paramètre 'pszName' comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, spécifiez MarshalAs explicitement, et définissez BestFitMapping=false ; pour une sécurité ajoutée, définissez également ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetNewLinkInfo(System.String&amp;,System.String&amp;,System.Text.StringBuilder,System.Boolean&amp;,ExpTreeLib.ShellDll+SHGNLI)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetNewLinkInfo(ByRef String, ByRef String, StringBuilder, ByRef Boolean, ShellDll.SHGNLI)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetNewLinkInfo(ByRef String, ByRef String, StringBuilder, ByRef Boolean, ShellDll.SHGNLI)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">Pour garantir votre sécurité, marshalez le paramètre 'pszName' comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, spécifiez MarshalAs explicitement, et définissez BestFitMapping=false ; pour une sécurité ajoutée, définissez également ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHGetSpecialFolderLocation(System.Int32,System.Int32,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.SHGetSpecialFolderLocation(Integer, Integer, ByRef IntPtr)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.SHGetSpecialFolderLocation(Integer, Integer, ByRef IntPtr)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StrRetToBSTR(ExpTreeLib.ShellDll+STRRET&amp;,System.IntPtr,System.String&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.StrRetToBSTR(ByRef ShellDll.STRRET, IntPtr, ByRef String)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.StrRetToBSTR(ByRef ShellDll.STRRET, IntPtr, ByRef String)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StrRetToBuf(System.IntPtr,System.IntPtr,System.Text.StringBuilder,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Étant donné qu'il s'agit d'une méthode P/Invoke, 'ShellDll.StrRetToBuf(IntPtr, IntPtr, StringBuilder, Integer)' doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Modifiez l'accessibilité de P/Invoke 'ShellDll.StrRetToBuf(IntPtr, IntPtr, StringBuilder, Integer)' afin qu'il ne soit plus visible hors de son assembly.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">Pour garantir votre sécurité, marshalez le paramètre 'pszBuf' comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, définissez BestFitMapping=false ; pour une sécurité accrue, définissez aussi ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShellDll+FORMATETC" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ptd" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">Définissez 'ShellDll.FORMATETC.ptd' comme privé.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShellDll+SHFILEINFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hIcon" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">Définissez 'ShellDll.SHFILEINFO.hIcon' comme privé.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShellDll+STGMEDIUM" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hGlobal" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">Définissez 'ShellDll.STGMEDIUM.hGlobal' comme privé.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pUnkForRelease" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2017-04-24 21:30:13Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">Définissez 'ShellDll.STGMEDIUM.pUnkForRelease' comme privé.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>Déclarer les gestionnaires d'événements correctement</Name>
+   <Description>Par convention, les événements .NET possèdent deux paramètres qui spécifient l'émetteur d'événement et les données d'événement. Les signatures du gestionnaire d'événements doivent suivre ce format : void MyEventHandler(object sender, EventArgs e). Le paramètre 'sender' est toujours du type System.Object, même s'il est possible d'employer un type plus spécifique. Le paramètre 'e' est toujours du type System.EventArgs. Les événements qui ne fournissent pas de données d'événement doivent utiliser le type délégué System.EventHandler. Les gestionnaires d'événements retournent void afin qu'ils puissent envoyer chaque événement à plusieurs méthodes cibles. Les valeurs retournées par une cible sont perdues après le premier appel.</Description>
+   <Resolution Name="First">Déclarez le premier paramètre de {0} en tant qu'objet nommé 'sender'.</Resolution>
+   <Resolution Name="Second">Déclarez le second paramètre de {0} en tant que EventArgs, ou une instance d'un type qui étend EventArgs, nommée 'e'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>N'exposez pas indirectement des méthodes avec des demandes de liaison</Name>
+   <Description>N'incluez pas dans un wrapper une méthode protégée par un LinkDemand avec une méthode n'effectuant aucune vérification de sécurité. Un LinkDemand vérifie les autorisations de l'appelant immédiat mais pas celles de tous les appelants dans le parcours de la pile. Dans ce cas, les autorisations de la méthode de wrapper seront vérifiées. Si la méthode de wrapper ne vérifie pas elle-même les autorisations des appelants plus hauts dans le parcours de la pile, un code malveillant peut exécuter la fonction incluse dans un wrapper, même s'il ne dispose pas des autorisations pour le faire.</Description>
+   <Resolution Name="Default">{0} est appelé dans {1} qui contient un LinkDemand. En effectuant cet appel, {1} s'expose indirectement au code utilisateur. Passez en revue le parcours de pile suivant susceptible de constituer un moyen de contourner les mesures de protection et de sécurité : {2}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182303.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+   <Name>Ne pas lever d'exceptions dans les emplacements inattendus</Name>
+   <Description>Ne levez pas explicitement des exceptions à partir d'emplacements inattendus. Il existe certaines méthodes, telles que Equals et GetHashCode, dont les utilisateurs ne s'attendent pas à ce qu'elles lèvent des exceptions. Par conséquent, les appels de ces méthodes ne sont généralement incluses dans un wrapper dans les blocs try catch.</Description>
+   <Resolution Name="NoAllowedExceptions">{0} crée une exception de type {1}. Les exceptions ne doivent pas être levés dans ce type de méthode. Si cette instance d'exception peut être levée, modifiez la logique de la méthode afin qu'elle ne lève plus une exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386039.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error, Warning</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Déplacer les P/Invoke vers une classe NativeMethods</Name>
+   <Description>Ce type contient des membres dotés de l'attribut DllImport. Les membres dotés de l'attribut DllImport doivent être contenus dans les classes nommées NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Étant donné qu'il s'agit d'une méthode P/Invoke, {0} doit être défini dans une classe nommée NativeMethods, SafeNativeMethods ou UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>Les déclarations P/Invoke doivent être portables</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">Tel qu'il est déclaré dans votre code, le paramètre {0} de P/Invoke {1} aura une largeur de {2} octets sur les plateformes {3}. Cela n'est pas correct, car la déclaration native réelle de cette API indique qu'elle doit avoir une largeur de {4} octets sur les plateformes {3}. Consultez la documentation du Kit de développement Platform SDK de MSDN pour obtenir de l'aide sur le choix du type de données à utiliser à la place de {5}.</Resolution>
+   <Resolution Name="Return">Tel qu'il est déclaré dans votre code, le type de retour de P/Invoke {0} aura une largeur de {1} octets sur les plateformes {2}. Cela n'est pas correct, car la déclaration native réelle de cette API indique qu'elle doit avoir une largeur de {3} octets sur les plateformes {2}. Consultez la documentation du Kit de développement Platform SDK de MSDN pour obtenir de l'aide sur le choix du type de données à utiliser à la place de {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>Les P/Invoke ne doivent pas être visibles</Name>
+   <Description>La couche d'interopérabilité ne doit pas être publique. L'attribut DllImport ne doit pas être appliqué aux membres accessibles publiquement (publics ou protégés).</Description>
+   <Resolution Name="Default">Modifiez l'accessibilité de P/Invoke {0} afin qu'il ne soit plus visible hors de son assembly.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111">
+   <Name>Les pointeurs ne doivent pas être visibles</Name>
+   <Description>Les champs IntPtr et UIntPtr doivent être déclarés comme privés. L'exposition de pointeurs non privés peut représenter une faiblesse de sécurité.</Description>
+   <Resolution Name="Default">Définissez {0} comme privé.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182306.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Spécifiez le marshaling pour les arguments de chaîne P/Invoke</Name>
+   <Description>Lors du marshaling de chaînes comme chaînes ANSI (ou comme chaînes automatiques sur Win9x), il se peut que certains caractères soient modifiés. Si le mappage ajusté est activé, les chaînes qui apparaissent différentes en Unicode seront marshalés en chaînes ANSI identiques, ce qui peut conduire à des décisions de sécurité incorrectes. La désactivation du mappage ajusté réduit un tel risque, car tous les caractères sans équivalents sont mappés à '?'. Notez également que CharSet.Ansi constitue le paramètre par défaut pour tout marshaling de chaînes ; le marshaling Unicode doit être spécifié explicitement, comme paramètre CharSet de DllImport ou StructLayout, ou comme attribut MarshalAs avec un UnmanagedType Unicode (ou dépendant du système).</Description>
+   <Resolution Name="Parameter">Pour garantir votre sécurité, marshalez le paramètre {0} comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, définissez BestFitMapping=false ; pour une sécurité accrue, définissez aussi ThrowOnUnmappableChar=true.</Resolution>
+   <Resolution Name="ParameterImplicitAnsi">Pour garantir votre sécurité, marshalez le paramètre {0} comme Unicode, en définissant DllImport.CharSet à CharSet.Unicode, ou en marshalant explicitement le paramètre comme UnmanagedType.LPWStr. Si vous devez marshaler cette chaîne comme ANSI ou comme dépendante du système, spécifiez MarshalAs explicitement, et définissez BestFitMapping=false ; pour une sécurité ajoutée, définissez également ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049">
+   <Name>Les types qui possèdent des ressources natives doivent être supprimables</Name>
+   <Description>Les types qui allouent des ressources non managées doivent implémenter IDisposable pour autoriser les appelants à libérer ces ressources à la demande. L'échec de l'implémentation de IDisposable peut entraîner la non-disponibilité ou la sous-utilisation des ressources non managées.</Description>
+   <Resolution Name="Default">Implémentez IDisposable sur {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182173.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Catégorie</String>
+  <String Key="Certainty">Certitude</String>
+  <String Key="CollapseAll">Réduire tout</String>
+  <String Key="CheckId">ID de contrôle</String>
+  <String Key="Error">Erreur</String>
+  <String Key="Errors">erreur(s)</String>
+  <String Key="ExpandAll">Développer tout</String>
+  <String Key="Help">Aide</String>
+  <String Key="Line">Ligne</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Emplacement non stocké dans le fichier Pdb]</String>
+  <String Key="Project">Projet</String>
+  <String Key="Resolution">Résolution</String>
+  <String Key="Rule">Règle</String>
+  <String Key="RuleFile">Fichier de règles</String>
+  <String Key="RuleDescription">Description de la règle</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">État</String>
+  <String Key="Target">Cible</String>
+  <String Key="Warning">Avertissement</String>
+  <String Key="Warnings">avertissement(s)</String>
+  <String Key="ReportTitle">Rapport d'analyse du code</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,143 @@
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Form1.resources
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+D:\dev\Visual Studio 2008\Projects\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Archiveur.sdf
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.DialogType.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+F:\dev\VS\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+F:\dev\VS\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+F:\dev\VS\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+F:\dev\VS\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Archiveur.sdf
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.DialogType.resources
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+D:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Archiveur.sdf
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.DialogType.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Archiveur.sdf
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.DialogType.resources
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+F:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\archiveur.sdf
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.dll
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+G:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\Resources\Options.xml
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe.config
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.exe
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.pdb
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.Archiveur.xml
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.dll
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.dll
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.pdb
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\CRESS.DLL.xml
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.pdb
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\ExpTreeLib.xml
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbprojResolveAssemblyReference.cache
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Main.resources
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Options.resources
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Save.resources
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.Resources.resources
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.vbproj.GenerateResource.Cache
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.exe
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.xml
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\obj\Debug\CRESS.Archiveur.pdb
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\FileSystem.dll
+E:\dev\VS\CRESS.Archiveur\CRESS.Archiveur\bin\Debug\FileSystem.pdb

@@ -1,0 +1,21 @@
+<Application xmlns="Options">
+  <Option value="Display">
+    <Type value="DeployAll" />
+    <PanelLeft value="False" />
+    <PanelRight value="False" />
+    <PanelUsers value="False" />
+    <PanelFiles value="False" />
+    <PanelSystem value="False" />
+    <PanelDate value="False" />
+  </Option>
+  <Option value="Connect">
+    <Activate value="False" />
+    <Login value="" />
+    <Pass value="" />
+  </Option>
+  <Option value="Path">
+    <BDD value="C:\Users\girar\Desktop\TEST\serveur\archiveur.sdf" />
+    <Server value="C:\Users\girar\Desktop\TEST\serveur" />
+    <Save value="C:\Users\girar\Desktop\TEST\save" />
+  </Option>
+</Application>

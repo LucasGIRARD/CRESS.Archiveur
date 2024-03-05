@@ -1,0 +1,52 @@
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.pdb
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.xml
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.ExpTree.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.Resources.resources
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbproj.GenerateResource.Cache
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.dll
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.xml
+D:\dev\Visual Studio 2008\Projects\EN COURS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.pdb
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.pdb
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.xml
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbprojResolveAssemblyReference.cache
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.ExpTree.resources
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.Resources.resources
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbproj.GenerateResource.Cache
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.dll
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.xml
+D:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.pdb
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.pdb
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbprojResolveAssemblyReference.cache
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.ExpTree.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.Resources.resources
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbproj.GenerateResource.Cache
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.dll
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.xml
+F:\dev\VS\archiveur\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.pdb
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll.CodeAnalysisLog.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll.lastcodeanalysissucceeded
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbprojResolveAssemblyReference.cache
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.ExpTree.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.Resources.resources
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbproj.GenerateResource.Cache
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.dll
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.xml
+C:\Users\girar\Desktop\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.pdb
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.dll
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.pdb
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\bin\Debug\ExpTreeLib.xml
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbprojResolveAssemblyReference.cache
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.ExpTree.resources
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.Resources.resources
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.vbproj.GenerateResource.Cache
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.dll
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.xml
+E:\dev\VS\CRESS.Archiveur\ExpTreeLib\obj\Debug\ExpTreeLib.pdb
